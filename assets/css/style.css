@@ -1,0 +1,139 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+a,
+i,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.main-head {
+  z-index: 1000 !important;
+}
+.btn:focus {
+  box-shadow: none !important;
+}
+#main-nav .nav-item {
+  margin: 0 10px !important;
+}
+#main-nav .nav-item a {
+  font-size: 15px;
+  color: #000;
+  font-family: "Open Sans";
+}
+.fa-search {
+  right: 27px;
+}
+nav {
+  background: #f2e4f1;
+}
+.navbar-nav li,
+.dropright button {
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  white-space: nowrap;
+}
+.navbar-nav li a {
+  color: #838383;
+  font-size: 13px;
+  font-weight: 900;
+  padding: 10px 25px !important;
+}
+.navbar-nav li:hover a {
+  color: #b1b0b0;
+}
+.navbar-nav li ul {
+  display: none;
+}
+.navbar-nav li:hover ul {
+  display: block;
+}
+.navbar-nav li:hover ul li button,
+.navbar-nav li:hover ul li .highlight {
+  color: #838383;
+}
+.navbar-nav li:hover ul li:hover button,
+.navbar-nav li:hover ul li:hover .highlight,
+.navbar-nav li:hover ul li .dropdown-menu p:hover {
+  color: #fff;
+  background: #ff7e4d;
+}
+.navbar-nav li:hover a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #ff7e4d;
+}
+
+.select-city p {
+  color: #ff7e4d;
+}
+.drop-down,
+.dropdown-menu {
+  background: #fff;
+  z-index: 50 !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.empty{
+  height: 130px;
+}
+.carousel-1 {
+  height: calc(100vh - 130px);
+}
+@media (max-width: 990px) {
+  #main-nav .nav-item {
+    margin: 0 5px !important;
+  }
+  #main-nav .nav-item a {
+    font-size: 14px;
+  }
+  .india span {
+    font-size: 11px;
+  }
+  .navbar-nav li a {
+    padding: 6px 15px !important;
+  }
+  .navbar-nav li:hover a:before {
+    display: none;
+  }
+  .drop-down {
+    top: -20px;
+    left: 30px;
+  }
+  .select-city {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .empty{
+    height: 240px;
+  }
+  .carousel-1 {
+    height: calc(100vh - 240px);
+  }
+}
+@media (max-width: 480px) {
+  #main-nav .nav-item {
+    margin: 0 7px !important;
+  }
+  #main-nav .nav-item a {
+    font-size: 14px;
+  }
+}
